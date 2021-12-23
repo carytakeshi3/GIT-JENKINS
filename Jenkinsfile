@@ -7,11 +7,12 @@ pipeline {
                 echo 'Building..'
             }
         }
-        stage('Test') {
-            steps {
-                echo 'Testing..'
-            }
-        }
+        fileOperations([fileCopyOperation(
+            excludes: '',
+            flattenFiles: false,
+            includes: 'C:\\My-Source\\**',
+            targetLocation: "C:\\My-Destination"
+                )])
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
