@@ -1,1 +1,2 @@
-RUN hello-world
+FROM alpine
+CMD ["echo", "Hello StackOverflow!"]
