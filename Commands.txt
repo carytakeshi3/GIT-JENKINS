@@ -1,0 +1,2 @@
+if docker doesnt allowed jenkins to run docker commands - 
+sudo chmod 666 /var/run/docker.sock
