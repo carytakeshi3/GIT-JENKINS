@@ -1,0 +1,6 @@
+- name: sample playbook
+  hosts: target-server
+  become: true
+  tasks:
+    - name: create new directory
+      command: mkdir /newdirectory
