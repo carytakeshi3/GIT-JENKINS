@@ -3,4 +3,4 @@
   become: true
   tasks:
     - name: create new directory
-      command: kubectl apply -f /var/lib/jenkins/jobs/github-jenkins-dockerhub/workspace/deployment.yaml
+      command: sh '/kubernetes-deployment/deployment.sh'
