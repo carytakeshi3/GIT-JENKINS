@@ -1,1 +1,3 @@
-kubectl apply -f /var/lib/jenkins/jobs/github-jenkins-dockerhub/workspace/deployment.yaml
+git clone https://github.com/carytakeshi3/GIT-JENKINS
+kubectl apply -f ./GIT-JENKINS/deployment.yaml
+rm -rf GIT-JENKINS
