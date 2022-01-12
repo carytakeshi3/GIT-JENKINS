@@ -3,8 +3,8 @@
   become: true
   tasks:
     - name: copy shell file to remote
-      copy: src=/var/lib/jenkins/jobs/github-jenkins-dockerhub/workspace/deploy.sh dest=/kubernetes-deployment/
+      copy: src=/var/lib/jenkins/jobs/github-jenkins-dockerhub/workspace/deploy.sh dest=/root/
     - name: run shell file
-      command: sh '/kubernetes-deployment/deployment.sh'
+      command: sh '/root/deploy.sh'
     - name: remove shell file
       command: rm deploy.sh
