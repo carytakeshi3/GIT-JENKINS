@@ -19,7 +19,7 @@ spec:
     spec:
         containers:
         - name: httpd
-          image: carytakeshi/githubimage
+          image: carytakeshi/githubimage:latest
           ports:
           - name: http-port
             containerPort: 80
